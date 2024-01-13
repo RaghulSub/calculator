@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 99, 138, 0.7),
+    rgba(43, 126, 177, 0.7),
+    rgba(17, 99, 138, 0.7)
+  );
+}
+
+#calc-container {
+  display: flex;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border-color: rgb(117, 161, 161, 0.2);
+  padding: 40px;
+  height: 600px;
+}
+#output-container {
+  padding-bottom: 10px;
+}
+#output {
+  display: flex;
+  justify-content: right;
+  border-style: solid;
+  border-color: azure;
+  border-radius: 30px;
+  color: black;
+  padding: 5px;
+  background-color: rgba(255, 255, 255);
+  height: 65px;
+  width: 420px;
+  font-size: 50px;
+  padding-top: 15px;
+  padding-right: 10px;
+  overflow: auto;
+  opacity: 0.8;
+}
+.numpad-rows {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5% 0;
+}
+.Button {
+  border: solid;
+  border-radius: 25px;
+  font-family: "Segoe UI";
+  font-size: 50px;
+  color: aliceblue;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 80px;
+  width: 70px;
+  padding-bottom: 10px;
+}
+.Button:hover {
+  cursor: pointer;
+  transition-duration: 0.4s;
+  backface-visibility: visible;
+  opacity: 0.5;
+}
+.Button:active {
+  transition-duration: 0.4s; /* to action after the duration */
+  transform: translateY(1px); /* to move downwards for 4px?\ */
+  opacity: 0.9;
+}
+#equalbutton {
+  display: flex;
+  width: 183px;
+  justify-content: center;
+  background-color: rgb(238, 125, 13);
+  border-color: rgb(238, 125, 13);
+}
+#equalbutton:hover {
+  opacity: 0.9;
+}
+#equalbutton:active {
+  transition-duration: 0.4s;
+  background-color: rgb(255, 255, 255, 0.1);
+  color: rgb(238, 125, 13);
+}

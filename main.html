@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="calcstyles.css" />
+    <meta charset="UTF-8" />
+    <meta name="author" content="Raghul S" />
+  </head>
+  <body>
+    <!-- Calculator Form -->
+
+    <div id="calc-container">
+      <form action="">
+        <section id="output-container">
+          <div id="output">0</div>
+          <!--This contain the inputs-->
+        </section>
+        <div id="numpad-container">
+          <div class="numpad-rows">
+            <input class="Button" type="button" value="C" onclick="Clear()" />
+            <input
+              class="Button"
+              type="button"
+              value="&larr;"
+              onclick="backspace()"
+            />
+
+            <input
+              class="Button"
+              id="equalbutton"
+              type="button"
+              value="="
+              onclick="expressionEvaluation()"
+            />
+          </div>
+          <div class="numpad-rows">
+            <input
+              class="Button"
+              type="button"
+              value="1"
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="2"
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="3"
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="+"
+              onclick="press(this.value)"
+            />
+          </div>
+          <div class="numpad-rows">
+            <input
+              class="Button"
+              type="button"
+              value="4"
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="5"
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="6"
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="-"
+              onclick="press(this.value)"
+            />
+          </div>
+          <div class="numpad-rows">
+            <input
+              class="Button"
+              type="button"
+              value="7"
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="8"
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="9"
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="*"
+              onclick="press(this.value)"
+            />
+          </div>
+          <div class="numpad-rows" id="last-row">
+            <input
+              class="Button"
+              type="button"
+              value="%"
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="0"
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="."
+              onclick="press(this.value)"
+            />
+            <input
+              class="Button"
+              type="button"
+              value="/"
+              onclick="press(this.value)"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="mainscript.js"></script>
+  </body>
+</html>
