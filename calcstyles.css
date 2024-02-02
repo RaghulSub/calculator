@@ -65,14 +65,16 @@ body {
   opacity: 0.5;
 }
 .Button:active {
-  transition-duration: 0.4s; /* to action after the duration */
-  transform: translateY(1.5px); /* to move downwards for 4px?\ */
+  transition-duration: 0.5s; /* to action after the duration */
+  transform: translateY(2px); /* to move downwards for 4px?\ */
   opacity: 0.9;
 }
 #equalbutton {
   display: flex;
   width: 183px;
   justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255, 0.8);
   background-color: rgb(238, 125, 13);
   border-color: rgb(238, 125, 13);
 }
@@ -81,6 +83,6 @@ body {
 }
 #equalbutton:active {
   transition-duration: 0.4s;
-  background-color: rgb(255, 255, 255, 0.1);
+  background-color: rgb(255, 255, 255, 0.3);
   color: rgb(238, 125, 13);
 }
