@@ -6,9 +6,9 @@ var output = document.getElementById("output"); // it is the search of the outpu
 function press(value) {
   // press() function used to handle every number and symbols except equal
 
-  // used to parse integer and symbols
   if (value != "=" || value != "") {
-    console.log(expression);
+    // used to parse integer and symbols
+
     expression += value;
     output.innerHTML = expression;
   }
